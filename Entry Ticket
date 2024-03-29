@@ -1,0 +1,20 @@
+// Project for PAF Museum Entry Ticket for different age groups
+// Child upto 10 years, Ticket price Rs. 60
+// Adult from 11 years to 60 years, Ticket price Rs. 120
+// Senior Citizen above 60 years, Ticket Price Rs. 0 (Free of cost)
+
+const promptMsg = require('prompt-sync')({sigint: true}) ;
+const visitorage:number = promptMsg("Please enter your age: ");
+// let visitorage:number=61
+if (visitorage <= 10){
+    console.log("Your age is" , visitorage)
+console.log("Kindly pay Rs.60")
+}
+else if (visitorage > 10 && visitorage <= 60){
+console.log("Your age is", visitorage)
+console.log("Kindly pay Rs.120")
+}
+else if(visitorage > 60)
+{
+    console.log("You are Senior Citizen, No need to pay")
+}
